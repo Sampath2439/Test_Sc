@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .redirect-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .loader {
+      margin: 20px auto;
+      border: 4px solid #e0e0e0;
+      border-top: 4px solid #007bff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    // Set your redirect URL here
+    const targetUrl = "https://gnana-sampath.notion.site/Sc-lab-code-1d3cbfa1462380c4986bdd03f78b38ae";
+    
+    // Redirect after 3 seconds
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="redirect-container">
+    <h1>Hold on! We're taking you there...</h1>
+    <div class="loader"></div>
+    <p>You will be redirected shortly. <br>If not, <a href="https://example.com">click here</a>.</p>
+  </div>
+</body>
+</html>
